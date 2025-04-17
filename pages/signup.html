@@ -1,7 +1,8 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-<meta charset="UTF-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yafrica Technology school</title>
     <link rel="stylesheet" href="styles.css">
@@ -10,51 +11,192 @@
 
 </head>
 
+
 <body>
-<header>
-    <div class="logo">
-        <img src="logo.png" alt="header_logo">
-        <h3>Yafrica technology school</h3>
-    </div>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="registration.html">Registration</a></li>
-            <li><a href="score.html">Score</a></li>
-            <li><a href="contactus.html">Contact Us</a></li>
-            <li><a href="aboutus.html">About Us</a></li>
-            
-            
-        </ul>
-    </nav>
-</header>  
-<main>
-    <section class="signup-page">
-
-        <div class="form-container ">
-            <h1>Sign up</h1>
-            <form id="signup-form">
-                <label for="signup-username">User name</label>
-                <input id="signup-username" placeholder="Please enter user name" >
-                <label for="signup-password">Password</label>
-                <input id="signup-password" placeholder="Please Enter a password">
-                <button  id="signup-button">Signup</button>
-        
-            </form>
-        
-            <p>already have an account?<a href="login.html">Login here</a> </p>
-        
+    <!-- <header>
+        <div class="logo">
+            <img src="logo.png" alt="header_logo">
+            <h3>Yafrica technology school</h3>
         </div>
-        <div class="hero-container">
-            <img src="logo.png" alt="logo">
-        </div>
-        
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="registration.html">Registration</a></li>
+                <li><a href="score.html">Score</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                
+            </ul>
+        </nav>
+    </header> -->
+    <main>
+        <section class="signup-page">
+            <div class="form-container">
+                <h1>Log in</h1>
 
-    </section>
-    
-    
-    
-</main>
+                <form id="signup-form">
+                    <label for="login-Username">Username</label>
+                    <input type="text" id="login-Username" placeholder="Enter your username" />
+
+                    <label for="login-Password">Password</label>
+                    <input type="password" id="login-Password" placeholder="Enter your password" />
+
+                    <button type="button" id="login-Button">Login</button>
+                </form>
+                <p>Don't have an account? <a href="signup.html">Signup here</a></p>
+            </div>
+            <div class="hero-container">
+                <img src="logo.png" alt="logo">
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section class="main-footer">
+            <div class="submain-footer">
+                <div class="hero-footer">
+                    <img src="logo.png" alt="logo">
+                    <h4>Yafrica</h4>
+                </div>
+                <div class="cont-footer">
+                    <h5>Contact Us</h5>
+                    <p>Address: 123 Main Street, City, Country</p>
+                    <p>Phone: +1234567890</p>
+                    <p>Email: info@yafrica.com</p>
+
+                </div>
+
+            </div>
+
+        </section>
+    </footer>
+
+
+    <script src="auth.js"></script>
+
+</body>
+
+</html>
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yafrica Technology School - Login</title>
+    <link rel="stylesheet" href="signup.css">
+    <link rel="icon" href="logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <section class="login-page">
+            <div class="form-container">
+                <div class="form-header">
+                    <h1>Welcome Back</h1>
+                    <p>Login to access your Yafrica Tech School account</p>
+                </div>
+
+                <form id="login-form">
+                    <div class="form-group">
+                        <label for="login-Username">Username</label>
+                        <div class="input-with-icon">
+                            <i class="fas fa-user"></i>
+                            <input type="text" id="login-Username" placeholder="Enter your username" />
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="login-Password">Password</label>
+                        <div class="input-with-icon">
+                            <i class="fas fa-lock"></i>
+                            <input type="password" id="login-Password" placeholder="Enter your password" />
+                            <i class="fas fa-eye toggle-password" id="togglePassword"></i>
+                        </div>
+                    </div>
+
+                    <div class="form-options">
+                        <div class="remember-me">
+                            <input type="checkbox" id="remember-me">
+                            <label for="remember-me">Remember me</label>
+                        </div>
+                        <a href="#" class="forgot-password">Forgot password?</a>
+                    </div>
+
+                    <button type="button" id="login-Button" class="btn-primary">Login</button>
+
+                    <div class="divider">
+                        <span>or</span>
+                    </div>
+
+                    <button type="button" class="btn-google">
+                        <i class="fab fa-google"></i> Continue with Google
+                    </button>
+
+                    <p class="signup-link">Don't have an account? <a href="login.html">Login here</a></p>
+                </form>
+            </div>
+
+            <div class="hero-container">
+                <div class="hero-content">
+                    <img src="logo.png" alt="Yafrica Technology School Logo" class="logo">
+                    <h2>Yafrica Technology School</h2>
+                    <p>Empowering the next generation of African tech innovators</p>
+                </div>
+                <div class="hero-image">
+                    <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                        alt="Students learning technology">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-brand">
+                <img src="logo.png" alt="Yafrica Logo">
+                <h4>Yafrica Technology School</h4>
+                <p>Transforming Africa through technology education</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-links">
+                <h5>Quick Links</h5>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="#">Courses</a></li>
+                    <li><a href="#">Events</a></li>
+                    <li><a href="contactus.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-contact">
+                <h5>Contact Us</h5>
+                <p><i class="fas fa-map-marker-alt"></i> 123 Tech Avenue, Silicon Valley, Lagos, Nigeria</p>
+                <p><i class="fas fa-phone-alt"></i> +234 123 456 7890</p>
+                <p><i class="fas fa-envelope"></i> info@yafricatech.edu</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2023 Yafrica Technology School. All rights reserved.</p>
+            <div class="legal-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Cookie Policy</a>
+            </div>
+        </div>
+    </footer>
+
     <script src="auth.js"></script>
 </body>
-</html>
+
+</html> -->

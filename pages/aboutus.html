@@ -1,10 +1,14 @@
-<html>
+
+
+ <!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yafrica Technology school</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="logo.png" type="image">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Open+Sans&family=Lato&display=swap" rel="stylesheet">
+    <title>Kuyera Adventist Secondary school</title>
+    <link rel="stylesheet" href="aboutus.css">
+    <link rel="icon" href="adv.png" type="image">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
 </head>
@@ -12,32 +16,184 @@
 <body>
     <header>
         <div class="logo">
-        
-            <img src="logo.png" alt="logo" class="logo">
-            <h3>Yafrica technology school</h3>
+
+<img src="adv.png" alt="logo" class="logo">
+<h2>Kuyera Adventist college</h2>
+<!-- <h3>Yafrica technology school</h3> -->
         </div>
-        <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="registration.html">Registration</a></li>
-            <li><a href="score.html">Score</a></li>
-            <li><a href="contactus.html">Contact Us</a></li>
-            <li><a href="aboutus.html">About Us</a></li>
-            <li><a href="login.html"><i class="fas fa-user-shield"></i></a></li>
-        </ul>
-        </nav>
+        <div>
+            <nav>
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="registration.html">Registration</a></li>
+                <li><a href="score.html">Score</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="login.html"><i class="fas fa-user-shield"></i></a></li>
+            </ul>
+            </nav>
+            
+        </div>   
     </header>
+
     <main>
-        <section>
-            <h1>About us page</h1>
-            <p>
-                Well come to yafrica technology school
-            </p>
+        <section class="about-hero">
+            <div class="hero-content">
+                <h1>Our Story</h1>
+                <p>Shaping futures through Christ-centered education since 1952</p>
+            </div>
+        </section>
+
+        <section class="mission-section">
+            <div class="mission-content">
+                <h2>Our Mission</h2>
+                <p>To provide quality Adventist education that develops students spiritually, intellectually, physically, and socially, preparing them for service to God and humanity.</p>
+                <div class="mission-stats">
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="70">0</span>+
+                        <span class="stat-label">Years of Excellence</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="5000">0</span>+
+                        <span class="stat-label">Graduates</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="98">0</span>%
+                        <span class="stat-label">Pass Rate</span>
+                    </div>
+                </div>
+            </div>
+            <div class="mission-image">
+                <img src="assets/mission-image.jpg" alt="Students in chapel">
+            </div>
+        </section>
+
+        <section class="history-section">
+            <h2>Our History</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-year">1952</div>
+                    <div class="timeline-content">
+                        <h3>Foundation</h3>
+                        <p>Established by Seventh-day Adventist missionaries to provide Christian education in the region.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">1968</div>
+                    <div class="timeline-content">
+                        <h3>First Graduating Class</h3>
+                        <p>Celebrated our first graduating class of 12 students.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">1995</div>
+                    <div class="timeline-content">
+                        <h3>New Campus</h3>
+                        <p>Moved to our current 20-acre campus with modern facilities.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">2020</div>
+                    <div class="timeline-content">
+                        <h3>Digital Transformation</h3>
+                        <p>Implemented smart classrooms and computer labs for 21st century learning.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="gallery-section">
+            <h2>School Gallery</h2>
+            <div class="gallery-container">
+                <div class="gallery-track">
+                    <div class="gallery-item">
+                        <img src="assets/school1.jpg" alt="School building">
+                        <p>Main Campus</p>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="assets/gallery2.jpg" alt="Classroom">
+                        <p>Science Lab</p>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="assets/gallery3.jpg" alt="Library">
+                        <p>School Library</p>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="assets/gallery4.jpg" alt="Sports">
+                        <p>Sports Day</p>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="assets/gallery5.jpg" alt="Chapel">
+                        <p>Chapel Service</p>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="assets/gallery6.jpg" alt="Graduation">
+                        <p>Graduation Ceremony</p>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery-controls">
+                <button class="gallery-prev"><i class="fas fa-chevron-left"></i></button>
+                <button class="gallery-next"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </section>
+
+        <section class="staff-section">
+            <h2>Meet Our Leadership</h2>
+            <div class="staff-grid">
+                <div class="staff-card">
+                    <img src="assets/principal.jpg" alt="Principal">
+                    <h3>Dr. Samuel Kebede</h3>
+                    <p>Principal</p>
+                    <p class="staff-bio">With 25 years in Adventist education, Dr. Kebede leads with vision and dedication.</p>
+                </div>
+                <div class="staff-card">
+                    <img src="assets/vice-principal.jpg" alt="Vice Principal">
+                    <h3>Mrs. Almaz Girma</h3>
+                    <p>Vice Principal</p>
+                    <p class="staff-bio">Specializing in curriculum development and student welfare.</p>
+                </div>
+                <div class="staff-card">
+                    <img src="assets/chaplain.jpg" alt="Chaplain">
+                    <h3>Pastor Daniel Asrat</h3>
+                    <p>School Chaplain</p>
+                    <p class="staff-bio">Guiding spiritual growth and character development.</p>
+                </div>
+            </div>
         </section>
     </main>
+
     <footer>
-        <p>&copy; 2024 Our School. All rights reserved.</p>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Kuyera, Ethiopia</p>
+                <p><i class="fas fa-phone"></i> +251 123 456 789</p>
+                <p><i class="fas fa-envelope"></i> info@kuyeraadventist.edu.et</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="registration.html">Admissions</a></li>
+                    <li><a href="score.html">Results</a></li>
+                    <li><a href="contactus.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Connect With Us</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-telegram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Kuyera Adventist Secondary School. All Rights Reserved.</p>
+        </div>
     </footer>
+
     <script src="aboutus.js"></script>
 </body>
 </html>
