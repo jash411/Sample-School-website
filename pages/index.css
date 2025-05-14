@@ -147,7 +147,7 @@ nav ul li a:hover::after {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
-.Explanation {
+/* .Explanation {
     margin: 4rem auto;
     padding: 3rem;
     display: flex;
@@ -202,9 +202,9 @@ nav ul li a:hover::after {
     font-size: 1rem;
     margin: 0.3rem 0;
     font-weight: 400;
-}
+} */
 
-#explore-news {
+/* #explore-news {
     text-align: center;
     font-size: 2.5rem;
     color: #056d2d;
@@ -271,7 +271,7 @@ nav ul li a:hover::after {
     width: 100%;
     height: 200px;
     object-fit: cover;
-}
+} */
 
 footer {
     background-color: #056d2d;
@@ -360,46 +360,7 @@ footer {
     }
 }
 
-.hero-txt #services,
-.Explanation,
-.new-regi {
-    animation: appear 1s ease forwards;
-}
 
-@media (max-width: 768px) {
-    header {
-        flex-direction: column;
-        padding: 1rem;
-    }
-
-    nav ul {
-        margin-top: 1rem;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .banner-text h1 {
-        font-size: 2.5rem;
-    }
-
-    .Explanation {
-        flex-direction: column;
-        padding: 2rem;
-    }
-
-    #ex-image img {
-        width: 100%;
-        margin-bottom: 2rem;
-    }
-
-    .footer-content {
-        flex-direction: column;
-    }
-
-    .footer-section {
-        margin-bottom: 2rem;
-    }
-}
 
 /* /////////////////////////////////////// */
 /* Grade Levels Section */
@@ -430,7 +391,8 @@ footer {
 
 .grade-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    /* makes the grade to be as a columns */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
     gap: 2rem;
     max-width: 1200px;
     margin: 0 auto;
@@ -441,10 +403,12 @@ footer {
     border-radius: 10px;
     padding: 2rem;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    /* makes the transition more smooth */
     transition: transform 0.3s ease;
 }
 
 .grade-card:hover {
+    /* determine the transition length */
     transform: translateY(-10px);
 }
 
@@ -535,6 +499,7 @@ footer {
 
 .staff-overlay {
     position: absolute;
+    /* this bottom make the text to become invisible by making out of the frame*/
     bottom: -100%;
     left: 0;
     right: 0;
@@ -545,6 +510,7 @@ footer {
 }
 
 .staff-card:hover .staff-overlay {
+    /* this make to be visible after hovering */
     bottom: 0;
 }
 
