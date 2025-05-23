@@ -613,3 +613,99 @@ footer {
         margin-bottom: 2rem;
     }
 }
+
+
+/* styles.css */
+
+/* General Section Styling */
+section {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.courses-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+/* Courses Section */
+.courses-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.course-card {
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.course-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.course-card i {
+    font-size: 2.5rem;
+    color: #007bff;
+    margin-bottom: 15px;
+}
+
+.course-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #222;
+}
+
+.course-card p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Facilities Section */
+.facilities-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.facility-card {
+    background-color: #fff;
+    padding: 0;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.facility-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.facility-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.facility-card h3 {
+    font-size: 1.5rem;
+    margin: 15px 0 10px;
+    color: #222;
+}
+
+.facility-card p {
+    font-size: 1rem;
+    color: #666;
+    padding: 0 15px 20px;
+}
