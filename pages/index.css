@@ -706,3 +706,163 @@ footer {
         margin-right: 1rem;
     }
 }
+
+
+
+
+
+
+
+
+
+/* ==================== */
+/* MOBILE RESPONSIVENESS */
+/* ==================== */
+@media (max-width: 768px) {
+
+    /* Header & Navigation */
+    header {
+        flex-direction: column;
+        padding: 1rem 0.5rem;
+    }
+
+    .logo {
+        margin-bottom: 1rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    nav ul li {
+        margin: 0.5rem 0;
+    }
+
+    /* Banner */
+    .banner-card img {
+        height: 60vh;
+    }
+
+    .banner-text h1 {
+        font-size: 2.5rem !important;
+    }
+
+    .banner-text h2 {
+        font-size: 1.5rem !important;
+    }
+
+    /* Explanation Section */
+    .Explanation {
+        flex-direction: column;
+        padding: 2rem 1rem;
+        margin: 2rem auto;
+    }
+
+    #ex-image img {
+        width: 100%;
+        margin-bottom: 1.5rem;
+    }
+
+    #ex-text {
+        padding-left: 0;
+    }
+
+    .ex-text-list {
+        flex-direction: column;
+    }
+
+    /* News Section */
+    .main-news {
+        grid-template-columns: 1fr;
+        padding: 0 1rem;
+    }
+
+    /* Footer */
+    .footer-content {
+        flex-direction: column;
+        padding: 0 1rem;
+    }
+
+    .footer-section {
+        padding: 1rem 0;
+        margin-bottom: 1.5rem;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    /* Grade Levels */
+    .grade-container {
+        grid-template-columns: 1fr;
+    }
+
+    /* Staff Section */
+    .staff-container {
+        grid-template-columns: 1fr;
+    }
+
+    /* Gallery */
+    .gallery-container {
+        grid-template-columns: 1fr;
+    }
+
+    /* Events */
+    .event-card {
+        flex-direction: column;
+    }
+
+    .event-date {
+        flex-direction: row;
+        justify-content: center;
+        padding: 1rem;
+    }
+
+    .event-date .day {
+        margin-right: 1rem;
+    }
+
+    /* General Text Adjustments */
+    h1,
+    .section-title,
+    #explore-news {
+        font-size: 2rem !important;
+    }
+
+    h2 {
+        font-size: 1.5rem !important;
+    }
+
+    .new-reg h2 {
+        font-size: 1.3rem !important;
+    }
+
+    /* Button Sizing */
+    button,
+    .btn-view,
+    #services {
+        padding: 0.8rem 1.2rem !important;
+        font-size: 1rem !important;
+        width: 100%;
+        max-width: 300px;
+        margin: 0.5rem auto;
+        display: block;
+    }
+}
+
+/* Smaller Phones */
+@media (max-width: 480px) {
+    .banner-text h1 {
+        font-size: 2rem !important;
+    }
+
+    .banner-text h2 {
+        font-size: 1.2rem !important;
+    }
+
+    .banner-card img {
+        height: 50vh;
+    }
+
+    #ex-text h1 {
+        font-size: 1.8rem !important;
+    } }

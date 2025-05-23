@@ -709,3 +709,154 @@ section {
     color: #666;
     padding: 0 15px 20px;
 }
+
+
+
+
+
+/* ================================= */
+/* MOBILE RESPONSIVENESS (768px and below) */
+/* ================================= */
+@media (max-width: 768px) {
+
+    /* General Adjustments */
+    body {
+        font-size: 15px;
+        line-height: 1.5;
+    }
+
+    section {
+        padding: 40px 15px;
+    }
+
+    /* Header & Navigation */
+    header {
+        flex-direction: column;
+        padding: 1rem;
+        position: relative;
+    }
+
+    .logo {
+        width: 100%;
+        justify-content: center;
+        margin-bottom: 1rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+        display: none;
+        /* Hidden by default */
+    }
+
+    nav ul.show {
+        display: flex;
+        /* Show when mobile menu is toggled */
+    }
+
+    nav ul li {
+        margin: 0.5rem 0;
+        text-align: center;
+    }
+
+    /* Mobile Menu Toggle */
+    .mobile-menu-toggle {
+        display: block;
+        position: absolute;
+        right: 1rem;
+        top: 1rem;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+
+    /* Hero Section */
+    .about-hero {
+        height: 50vh;
+        padding: 0 1rem;
+    }
+
+    .hero-content h1 {
+        font-size: 2rem !important;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+    /* Mission Section */
+    .mission-section {
+        flex-direction: column;
+        padding: 3rem 1rem;
+        gap: 2rem;
+    }
+
+    .mission-stats {
+        flex-direction: column;
+    }
+
+    .stat-item {
+        margin: 0.5rem 0;
+    }
+
+    /* Timeline */
+    .timeline::before {
+        left: 30px;
+    }
+
+    .timeline-item:nth-child(odd),
+    .timeline-item:nth-child(even) {
+        padding-left: 80px;
+        padding-right: 0;
+        text-align: left;
+    }
+
+    .timeline-item:nth-child(odd) .timeline-year,
+    .timeline-item:nth-child(even) .timeline-year {
+        left: -50px;
+        right: auto;
+    }
+
+    /* Gallery */
+    .gallery-item {
+        min-width: 250px;
+        margin: 0 10px;
+    }
+
+    /* Staff Grid */
+    .staff-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .staff-card img {
+        height: 200px;
+    }
+
+    /* Courses & Facilities */
+    .courses-grid,
+    .facilities-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Footer */
+    .footer-content {
+        flex-direction: column;
+    }
+
+    .footer-section {
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+
+    .footer-section h3::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .social-icons {
+        justify-content: center;
+    }
+}
+
+/* ================================= */
+/* SMALL PHONES (480px and below) */
+/* ================================= */
